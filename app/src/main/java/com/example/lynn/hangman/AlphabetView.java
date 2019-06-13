@@ -18,8 +18,12 @@ public class AlphabetView extends TableLayout {
         for(int counter=0;counter<alphabet.length;counter++) {
             alphabet[counter] = new Button(context);
 
+            alphabet[counter].setText("" + (char)(counter + 65));
+
 
         }
+
+
     }
 
 }
