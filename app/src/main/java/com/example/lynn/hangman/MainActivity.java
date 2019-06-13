@@ -46,6 +46,6 @@ public class MainActivity extends AppCompatActivity {
 
         database = helper.getReadableDatabase();
 
-        setContentView(R.layout.activity_main);
+        setContentView(myView = new MyView(this));
     }
 }
