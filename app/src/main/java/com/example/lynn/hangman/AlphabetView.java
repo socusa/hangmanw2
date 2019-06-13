@@ -9,6 +9,8 @@ public class AlphabetView extends TableLayout {
 
     public AlphabetView(Context context) {
         super(context);
+
+        setBackgroundColor(0xFF008F00);
     }
 
 }

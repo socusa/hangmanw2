@@ -1,5 +1,10 @@
 package com.example.lynn.hangman;
 
+import android.content.Context;
+import android.graphics.Point;
+import android.view.Display;
+import android.view.WindowManager;
+
 public class Util {
 
     public static Point sizeOfScreen(Context context) {
