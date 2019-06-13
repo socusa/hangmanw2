@@ -31,7 +31,20 @@ public class MyView extends RelativeLayout {
 
         params = new RelativeLayout.LayoutParams(2*width/3,height/4);
 
-        params.addRule(RelativeLayout.BELOW,)
+        params.addRule(RelativeLayout.BELOW,buttonsView.getId());
+
+        alphabetView.setLayoutParams(params);
+
+        alphabetView.setId(View.generateViewId());
+
+        addView(alphabetView);
+
+        hangmanView = new HangmanView(context);
+
+        params = new RelativeLayout.LayoutParams(2*width/3,height/4);
+
+        params.addRule(RelativeLayout.BELOW,buttonsView.getId());
+
 
 
 
