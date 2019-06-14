@@ -16,6 +16,27 @@ public class MyListener implements View.OnClickListener {
     public void onClick(View view) {
         Button button = (Button)view;
 
+        char letter = button.getText().charAt(0);
+
+        word = word.toUpperCase();
+
+        boolean found = false;
+
+        for(int counter=0;counter<buttons.length;counter++) {
+            if (letter == word.charAt(counter)) {
+                buttons[counter].setText("" + letter);
+
+                found = true;
+            }
+
+            button.setVisibility(View.INVISIBLE);
+        }
+
+        if (!found)
+            numberMissed++;
+
+        hangmanView.check();
+
     }
 
 }

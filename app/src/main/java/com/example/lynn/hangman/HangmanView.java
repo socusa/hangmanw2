@@ -21,12 +21,19 @@ public class HangmanView extends View {
 
         paint.setStyle(Paint.Style.STROKE);
 
-        drawHead = true;
-        drawLeftArm = true;
-        drawRightArm = true;
-        drawBody = true;
-        drawLeftLeg = true;
-        drawRightLeg = true;
+    }
+
+    public void check() {
+        switch(numberMissed) {
+            case 6 : drawRightLeg = true;
+            case 5 : drawLeftLeg = true;
+            case 4 : drawBody = true;
+            case 3 : drawRightArm = true;
+            case 2 : drawLeftArm = true;
+            case 1 : drawHead = true;
+        }
+
+        invalidate();
     }
 
     public void onDraw(Canvas canvas) {
@@ -35,6 +42,28 @@ public class HangmanView extends View {
 
             canvas.drawLine(width/6,150,width/6,200,paint);
         }
+
+        if (drawLeftArm) {
+            canvas.drawLine(width/6,200,width/6-width/12,400,paint);
+        }
+
+        if (drawRightArm) {
+            canvas.drawLine(width/6,200,width/6+width/12,400,paint);
+        }
+
+        if (drawBody) {
+            canvas.drawLine(width/6,200,width/6,700,paint);
+        }
+
+        if (drawLeftLeg) {
+            canvas.drawLine(width/6,700,width/6-width/12,900,paint);
+        }
+
+        if (drawRightLeg) {
+            canvas.drawLine(width/6,700,width/6+width/12,900,paint);
+        }
+
+
     }
 
 
