@@ -1,6 +1,7 @@
 package com.example.lynn.hangman;
 
 import android.content.Context;
+import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.view.View;
 
@@ -17,6 +18,19 @@ public class HangmanView extends View {
         paint = new Paint();
 
         paint.setColor(0xFFFFFFFF);
+
+        drawHead = true;
+        drawLeftArm = true;
+        drawRightArm = true;
+        drawBody = true;
+        drawLeftLeg = true;
+        drawRightLeg = true;
+    }
+
+    public void onDraw(Canvas canvas) {
+        if (drawHead) {
+            canvas.drawCircle(100,100,50,paint);
+        }
     }
 
 

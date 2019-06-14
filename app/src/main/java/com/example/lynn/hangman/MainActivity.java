@@ -21,6 +21,13 @@ public class MainActivity extends AppCompatActivity {
     public static int width;
     public static int height;
     public static String word;
+    public static boolean drawHead;
+    public static boolean drawLeftArm;
+    public static boolean drawRightArm;
+    public static boolean drawBody;
+    public static boolean drawLeftLeg;
+    public static boolean drawRightLeg;
+    public static int numberMissed;
 
     public static String getWord() {
         java.util.List<String> words = new ArrayList<>();
