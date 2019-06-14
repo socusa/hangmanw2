@@ -25,6 +25,10 @@ public class ButtonsView extends LinearLayout {
 
             buttons[counter].setTextSize(20);
 
+            buttons[counter].setLayoutParams(layoutParams);
+
+            addView(buttons[counter]);
+
 
         }
     }
