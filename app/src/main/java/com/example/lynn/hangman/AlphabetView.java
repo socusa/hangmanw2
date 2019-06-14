@@ -22,6 +22,8 @@ public class AlphabetView extends TableLayout {
             alphabet[counter].setText("" + (char)(counter + 65));
 
             alphabet[counter].setTextSize(20);
+
+            alphabet[counter].setOnClickListener(listener);
         }
 
         TableRow row1 = new TableRow(context);
