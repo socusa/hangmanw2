@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
     public static SQLiteDatabase database;
     public static MyDatabaseHelper helper;
     public static Button[] buttons;
+    public static int width;
+    public static int height;
 
     public static String getWord() {
         java.util.List<String> words = new ArrayList<>();

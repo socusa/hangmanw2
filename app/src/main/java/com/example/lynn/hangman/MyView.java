@@ -14,8 +14,8 @@ public class MyView extends RelativeLayout {
 
         Point size = Util.sizeOfScreen(context);
 
-        int width = size.x;
-        int height = size.y;
+        width = size.x;
+        height = size.y;
 
         buttonsView = new ButtonsView(context);
 
