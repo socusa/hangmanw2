@@ -19,6 +19,8 @@ public class HangmanView extends View {
 
         paint.setColor(0xFFFFFFFF);
 
+        paint.setStyle(Paint.Style.STROKE);
+
         drawHead = true;
         drawLeftArm = true;
         drawRightArm = true;
@@ -29,7 +31,9 @@ public class HangmanView extends View {
 
     public void onDraw(Canvas canvas) {
         if (drawHead) {
-            canvas.drawCircle(100,100,50,paint);
+            canvas.drawCircle(width/6,100,50,paint);
+
+            canvas.drawLine(width/6,150,width/6,200,paint);
         }
     }
 
