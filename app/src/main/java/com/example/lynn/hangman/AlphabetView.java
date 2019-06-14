@@ -20,6 +20,8 @@ public class AlphabetView extends TableLayout {
             alphabet[counter] = new Button(context);
 
             alphabet[counter].setText("" + (char)(counter + 65));
+
+            alphabet[counter].setTextSize(20);
         }
 
         TableRow row1 = new TableRow(context);
