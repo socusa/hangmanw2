@@ -11,6 +11,8 @@ public class ButtonsView extends LinearLayout {
         super(context);
 
         setBackgroundColor(0xFF8F0000);
+
+        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(100,100);
     }
 
 }
